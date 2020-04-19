@@ -3,7 +3,7 @@ body {
     font-size: 18px;
     line-height: 34px;
     color: #777777;
-    background: url("gravel.png");
+    background-image: url(../gravel.png);
   }
   
   * {
@@ -215,11 +215,13 @@ body {
     background: #4aaaa5;
     border: 0 none;
   }
-  
-  @media screen (max-width:980px){}
-
-  @media screen (max-width:768px){}
-
-  @media screen (max-width:640px){
+@media screen (max-width: 980px;){
+}
+@media screen (max-width: 768px;){
+}
+@media screen (max-width: 640px;){
     header{position: static;}
-  }
+}
+
+  
+ 
