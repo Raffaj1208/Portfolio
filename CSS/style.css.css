@@ -215,6 +215,9 @@ body {
     background: #4aaaa5;
     border: 0 none;
   }
+  section{
+    height: max-content; width: max-content;
+  }
   @media screen (max-width: 980px;){
   }
   
