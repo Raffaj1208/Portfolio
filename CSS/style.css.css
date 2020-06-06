@@ -61,7 +61,7 @@ body {
     overflow: auto;
     color: #ffffff;
     background: #ffffff;
-    border-bottom: 2px solid navy;
+    border-bottom: 2px solid darkgoldenrod;
   }
   
   #logo {
@@ -129,7 +129,7 @@ body {
     padding: 30px;
     margin: 0 0 40px;
     background: #ffffff;
-    border: 1px solid black;
+    border: 5px solid darkgoldenrod;
   }
   
   /* portfolio page */
@@ -216,7 +216,7 @@ a{
     font-size: 18px;
     color: #ffffff;
     cursor: pointer;
-    background:darkslategray;
+    background:darkblue;
     border: solid; border-radius: 15px;
   }
   #contactSubmit{
