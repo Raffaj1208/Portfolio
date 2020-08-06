@@ -4,7 +4,8 @@ body {
     font-weight: bold;
     line-height: 34px;
     color: black;
-    background-image: url(../Images/dark-paths.png);
+    background-image: url(../Images/workplace.jpg);
+    background-position: center;
   }
   
   * {
