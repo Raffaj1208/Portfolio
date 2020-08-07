@@ -7,6 +7,9 @@ body {
     background-image: url(../Images/workplace.jpg);
     background-position: center;
   }
+  .githubLink{
+    color:black;
+  }
   
   * {
     box-sizing: border-box;
