@@ -1,5 +1,5 @@
 
-var mongoose = require('mongoose');
+/*var mongoose = require('mongoose');
 var express = require('express');
 var app = express();
 var db = require('./model');
@@ -37,7 +37,19 @@ var updateContact = function(){
     });
     });
 };
-
+*/
     $("#Submit").on("click", function(error, response){
-    updateContact();
+    console.log('button active')
+    
+    name = $('#name').val();
+    email = $('#email').val();
+    message = $('#message').val();
+    contact = {
+        name: name,
+        email: email,
+        message: message
+    };console.log(contact);
+
+    $('#input').append(contact);
+
     });
