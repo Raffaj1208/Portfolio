@@ -1,5 +1,13 @@
+
 var mongoose = require('mongoose');
+var express = require('express');
+var app = express();
 var db = require('./model');
+
+var Port = process.env.Port || 3000;
+app.listen(Port, function(){
+    console.log('Listening on ' + Port);
+});
 
 var MONGO_URI = process.env.MONGO_URI || 'mongodb://localhost:contacts';
 mongoose.connect(MONGO_URI, {useNewUrlParser: true});
@@ -16,6 +24,7 @@ var updateContact = function(){
             email: email,
             summary: summary
         });
+        $('#input').append(results);
     }
     db.Contact.create(results).then(function(newContact){
         results.render({newContact});
@@ -29,6 +38,6 @@ var updateContact = function(){
     });
 };
 
-    $("#Submit").on("click", function(){
-      updateContact();
+    $("#Submit").on("click", function(error, response){
+    updateContact();
     });

@@ -215,17 +215,16 @@ a{
     height: 200px;
   }
   
-  input[type=submit] {
+  #Submit {
     padding: 10px 30px;
     font-size: 18px;
     color: #ffffff;
     cursor: pointer;
     background:darkblue;
     border: solid; border-radius: 15px;
-  }
-  #contactSubmit{
     float: right;
   }
+  
   section{
     height: max-content; width: max-content;
   }
