@@ -39,17 +39,16 @@ var updateContact = function(){
 };
 */
     $("#Submit").on("click", function(error, response){
-    console.log('button active')
-    
-    name = $('#name').val();
-    email = $('#email').val();
-    message = $('#message').val();
-    contact = {
+
+    var name = $('#name').val();
+    var email = $('#email').val();
+    var message = $('#message').val();
+    var contact = {
         name: name,
         email: email,
         message: message
-    };console.log(contact);
-
-    $('#input').append(contact);
+    };
+    console.log(contact);
+    $('#recordContact').push(contact);
 
     });
