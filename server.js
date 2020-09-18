@@ -1,17 +1,19 @@
-
 /*
+var $ = require('jquery');
 var mongoose = require('mongoose');
 var express = require('express');
 var app = express();
 var db = require('./model');
 
 var Port = process.env.Port || 3000;
-app.listen(Port, function(){
-    console.log('Listening on ' + Port);
-});
+
 
 var MONGO_URI = process.env.MONGO_URI || 'mongodb://localhost:contacts';
 mongoose.connect(MONGO_URI, {useNewUrlParser: true});
+        
+app.listen(Port, function(){
+            console.log('Listening on ' + Port);
+        });
 
 var updateContact = function(){
   var results = [];
