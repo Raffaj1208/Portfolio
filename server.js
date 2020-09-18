@@ -1,3 +1,17 @@
+$("#Submit").on("click", function(error, response){
+
+var name = $('#name').val();
+var email = $('#email').val();
+var message = $('#message').val();
+var contact = {
+    name: name,
+    email: email,
+    message: message
+};
+console.log(contact);
+$('#recordContact').append('<p>' + name + '<br>' + email + '<br>' + message + '</p>');
+
+});
 /*
 var $ = require('jquery');
 var mongoose = require('mongoose');
@@ -41,17 +55,3 @@ var updateContact = function(){
     });
 };
 */
-    $("#Submit").on("click", function(error, response){
-
-    var name = $('#name').val();
-    var email = $('#email').val();
-    var message = $('#message').val();
-    var contact = {
-        name: name,
-        email: email,
-        message: message
-    };
-    console.log(contact);
-    $('#recordContact').append('<p>' + name + '<br>' + email + '<br>' + message + '</p>');
-
-    });
