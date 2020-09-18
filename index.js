@@ -1,5 +1,6 @@
 
-/*var mongoose = require('mongoose');
+/*
+var mongoose = require('mongoose');
 var express = require('express');
 var app = express();
 var db = require('./model');
@@ -49,6 +50,6 @@ var updateContact = function(){
         message: message
     };
     console.log(contact);
-    $('#recordContact').push(contact);
+    $('#recordContact').append('<p>' + name + '<br>' + email + '<br>' + message + '</p>');
 
     });

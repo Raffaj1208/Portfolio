@@ -224,8 +224,8 @@ a{
     border: solid; border-radius: 15px;
     float: right;
   }
-  #contactInf{
-    height: max-content; width: max-content;
+  #recordContact{
+    height: 50%; width: 50%;
     background-color: white;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
