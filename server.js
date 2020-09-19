@@ -12,6 +12,9 @@ console.log(contact);
 $('#recordContact').append('<p>' + name + '<br>' + email + '<br>' + message + '</p>');
 
 });
+
+var mongoose = require('mongoose');
+
 /*
 var $ = require('jquery');
 var mongoose = require('mongoose');
